@@ -4,10 +4,55 @@
     box-sizing: border-box;
 }
 
-h1 {
+#name {
+    color: rgba(51, 51, 51, 1);
     text-align: center;
+    margin-top: 10vh;
+    font-size: calc(30px + 2vw);
+    animation: name 3s ease-in-out;
 }
 
 body {
     background-color: rgba(194,225,231,255);
 }
+
+/*---------------------------------------------------------------*/
+@keyframes name {
+ from {
+    transform: rotate(-720deg) translate(-100%, -100%);
+    opacity: 0;
+ }
+ to {
+    transform: rotate(0deg) translate(0, 0);
+    opacity: 1;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* All of my keyframes will be going under here* */
