@@ -44,7 +44,8 @@
   }
   
   footer {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 2px;
@@ -104,6 +105,8 @@
   letter-spacing: 1px;
 }
 
+/* ------------------------------------------------------------------------------------------------------- 
+        ABOUT ME PAGE STARTS HERER                      */
 
 #aboutMeBody {
   background-color: #C2E7DB;
@@ -111,27 +114,52 @@
 
 #aboutMeTag {
   text-align: center;
+  letter-spacing: 1.6px;
   color: rgba(51, 51, 51, 1);
   padding-right: 35px;
 }
 
-.aboutMePictures {
-  width: 50%;
-  /* display: flex; */
-  /* justify-content: space-around; */
-}
-
 .images {
-  width: 50%;
+  display: none;
+  width: 60%;
   padding: 10px;
   box-sizing: border-box;
   box-shadow: 2px 2px none;
 }
 
 .aboutMePictures {
-  display: block;
-  text-align: center;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 100%;
+width: 70%;
+height: 50%;
 }
+
+#buttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 40px;
+  margin-top: 2vh;
+}
+
+#previousImage {
+  /* text-align: center; */
+  color: rgba(51, 51, 51, 1);
+  background-color: bisque;
+}
+
+
+#aboutMeButton{
+  /* align-self: center; */
+  color: rgba(51, 51, 51, 1);
+  background-color: bisque;
+}
+
+
+
 
   /*--------------------------------------------------------
                   ALL KEY FRAMES WILL GO DOWN HERE*/
@@ -188,5 +216,15 @@
   to {
     opacity: 1;
     color: rgba(51, 51, 51, 1);
+  }
+}
+
+
+@keyframes aboutMePictures {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
