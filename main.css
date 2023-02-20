@@ -24,7 +24,8 @@
     text-align: center;
     margin-top: 0.5vh;
     font-size: calc(30px + 2vw);
-    animation: name 2.4s ease-in-out;
+    animation: name 2s ease-in-out;
+    letter-spacing: 3px;
   }
   
   #homePagePic {
@@ -62,23 +63,78 @@
     text-align: center;
   }
 
+/* #welcomeSentence {
+  justify-content: left;
+  top: -30px;
+} */
+
+#homePageFirstLine {
+  color: rgba(51, 51, 51, 1);
+  animation: homePageFirstLine 2s ease-in forwards;
+  position: relative;
+  top: -360px;
+  padding-left: 100px;
+  letter-spacing: 1px;
+}
+
+#homePageSecondLine {
+  color: rgba(51, 51, 51, 1);
+  animation: homePageSecondLine 3.5s ease-in forwards;
+  position: relative;
+  top: -350px;
+  padding-left: 115px;
+  letter-spacing: 1px;
+}
+
+#homePageThirdLine {
+  color: rgba(51, 51, 51, 1);
+  animation: homePageThirdLine 5s ease-in forwards;
+  position: relative;
+  top: -340px;
+  padding-left: 100px;
+  letter-spacing: 1px;
+}
+
+#homePageFourthLine {
+  color:rgba(51, 51, 51, 1);
+  animation: homePageFourthLine 6.5s ease-in forwards;
+  position: relative;
+  top: -330px;
+  padding-left: 95px;
+  letter-spacing: 1px;
+}
 
 
+#aboutMeBody {
+  background-color: #C2E7DB;
+}
 
+#aboutMeTag {
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+  padding-right: 35px;
+}
 
+.aboutMePictures {
+  width: 50%;
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
 
+.images {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px none;
+}
 
+.aboutMePictures {
+  display: block;
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-  /*--------------------------------------------------------*/
+  /*--------------------------------------------------------
+                  ALL KEY FRAMES WILL GO DOWN HERE*/
   @keyframes name {
     from {
       transform: rotate(-720deg) translate(-100%, -100%);
@@ -90,3 +146,47 @@
     }
   }
   
+
+@keyframes homePageFirstLine {
+  from {
+    opacity: -10;
+    color:  rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
+
+@keyframes homePageSecondLine {
+  from {
+    opacity: -20;
+    color:  rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
+
+@keyframes homePageThirdLine {
+  from {
+    opacity: -40;
+    color: rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
+
+@keyframes homePageFourthLine {
+  from {
+    opacity: -60;
+    color: rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
