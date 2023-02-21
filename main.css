@@ -5,8 +5,6 @@
     box-sizing: border-box;
   }
   
-
-
   /* ------------------------------------------------------------------------------------------------------- 
         HOME PAGE STARTS HERER                      */
 
@@ -112,10 +110,53 @@
   letter-spacing: 1px;
 }
 
-#popUpMessage {
-  position: fixed;
-  
+@media (max-width: 768px) {
+  #homePageFirstLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
+  #homePageSecondLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
+  #homePageThirdLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
+  #homePageFourthLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
 }
+
+
+
+/* got it to work on smaller screens so this code was no longer necessary  */
+
+/* #popUpMessage { */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#popUpMessage-text {
+  height: 150px;
+  width: 200px;
+  border-radius: 1px;
+} */
+
+
 
 /* ------------------------------------------------------------------------------------------------------- 
         ABOUT ME PAGE STARTS HERER                      */
@@ -191,6 +232,64 @@ height: 50%;
   padding-right: 71px;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 1268px) {
+  #one {
+    text-align: right;
+    display: flex;
+    position: relative;
+    margin-top: 53vh;
+    font-size: 13px;
+    margin-left: 450px;
+    margin-right: 0px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------- 
+        RESUME PAGE STARTS HERE                     */
+
+
+#resumeTag {
+  text-align: center;
+  margin-left: -50px;
+  letter-spacing: 2px;
+  color: rgba(51, 51, 51, 1);
+}
+
+body {
+  background-color: #e7c8c2;
+}
+/* #section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  width: 70%;
+  height: 50%;
+} */
+
+#resume1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -10vh;
+  max-width: -40%;
+  max-width: -40%;
+  margin-left: 350px;
+}
+
+#resume2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -10vh;
+  max-width: -40%;
+  max-width: -40%;
+  margin-left: 350px;
+}
+
+
+
+
 
 
 
