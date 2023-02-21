@@ -1,9 +1,16 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+
+
+  /* ------------------------------------------------------------------------------------------------------- 
+        HOME PAGE STARTS HERER                      */
+
+
   #homePage {
     background-color: rgba(194, 225, 231, 255);
     height: 100%;
@@ -158,6 +165,28 @@ height: 50%;
   background-color: bisque;
 }
 
+#infoAboutMe {
+  display: flex;
+  text-align: right;
+  color: rgba(51, 51, 51, 1);
+  justify-content: flex-end;
+  margin-right: auto;
+  margin-top: -1050px;
+  letter-spacing: 1px;
+  padding-right: 400px;
+  animation: infoAboutMe 1s ease-in;
+}
+
+#one {
+  display: flex;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
+  justify-content: flex-end;
+  margin-right: auto;
+  padding-right: 71px;
+  letter-spacing: 0.5px;
+}
+
 
 
 
@@ -226,5 +255,16 @@ height: 50%;
   }
   to {
     opacity: 1;
+  }
+}
+
+
+
+@keyframes infoAboutMe {
+  from {
+    transform: translateX(-100%)
+  }
+  to {
+    transform: translateX(0%);
   }
 }
