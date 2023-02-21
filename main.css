@@ -275,6 +275,7 @@ body {
   max-width: -40%;
   max-width: -40%;
   margin-left: 350px;
+  animation: resume1 2.5s ease-in backwards;
 }
 
 #resume2 {
@@ -285,6 +286,7 @@ body {
   max-width: -40%;
   max-width: -40%;
   margin-left: 350px;
+  animation: resume2 7s ease-in forwards;
 }
 
 
@@ -370,5 +372,32 @@ body {
   }
   to {
     transform: translateX(0%);
+  }
+}
+
+@keyframes resume1 {
+  0% {
+    opacity: -1;
+    color: #e7c8c2;;
+  }
+  30% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes resume2 {
+  from {
+    background-color: #e7c8c2;
+    color: #e7c8c2;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
