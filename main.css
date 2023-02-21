@@ -112,6 +112,11 @@
   letter-spacing: 1px;
 }
 
+#popUpMessage {
+  position: fixed;
+  
+}
+
 /* ------------------------------------------------------------------------------------------------------- 
         ABOUT ME PAGE STARTS HERER                      */
 
