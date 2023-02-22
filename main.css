@@ -32,15 +32,32 @@
     animation: name 2s ease-in-out;
     letter-spacing: 3px;
   }
-  
+
+  /* .homePageBorder { 
+    position: absolute;
+    display: inline-block;
+    background-image: linear-gradient(180deg, #E1E7C2, #7a49a5, rgb(212, 167, 82));
+    position: absolute;
+    animation: homePageBorder 2s linear infinite;
+  } */
+
   #homePagePic {
     display: block;
     margin: 0 auto;
-    background-image: linear-gradient(180deg, #E1E7C2, #7a49a5);
-    animation: homePagePic 4s linear infinite;
-    transition: all 0.5 linear;
+    position: relative;
+    background-image: linear-gradient(180deg, #E1E7C2, #7a49a5, rgb(81, 198, 231), rgb(59, 237, 151), rgb(240, 83, 83));
+    padding: 16px;
+    padding: 5.5px;
   }
+  
 
+  /* #home-page-border {
+    max-width: fit-content;
+    padding: 16px;
+    position: relative;
+    background: linear-gradient(rotate, red, orange,blue,purple);
+    padding: 2px;
+  } */
 
   .mainNav {
     margin: 0 12vw 1vh;
@@ -350,6 +367,12 @@ height: 50%;
 }
 
 
+#github {
+  text-align: center;
+  margin-top: -13vh;
+  margin-right: 30px;
+}
+
   /*--------------------------------------------------------
                   ALL KEY FRAMES WILL GO DOWN HERE*/
   @keyframes name {
@@ -501,3 +524,12 @@ height: 50%;
         transform: rotate(-1deg);
       }
     }
+
+@keyframes .homePageBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
