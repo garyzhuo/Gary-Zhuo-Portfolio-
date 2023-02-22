@@ -324,6 +324,101 @@ height: 50%;
   animation: projectsTag 1.9s ease-in infinite;
 }
 
+/* ------------------------------------------------------------------------------------------------------- 
+       SPACE BATTLE WILL STARTS HERER                      */
+
+#spaceBattleH {
+  margin-left: 290px;
+  margin-top: 55px;
+  letter-spacing: 1px;
+}
+
+#spaceBattleGif {
+  margin-left: 65px;
+}
+
+#spaceInfo {
+  margin-left: 830px;
+  margin-top: -400px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+
+#spaceClickMe {
+  margin-left: 897px;
+  color: #7a49a5;
+}
+
+#spaceCode {
+  margin-top: -50px;
+}
+
+#spaceJava {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+#codeForTheSpaceBattle {
+  margin-top: 35px;
+  text-align: center;
+  background-image: url('spacespace.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #109292;
+  border: 2px;
+  border-left: 2px;
+}
+
+#pewpew {
+  display: inline-block;
+  background-image: url('outerspace.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#space {
+  color: #cccef8;
+  text-align: center;
+  font-weight: bold;
+}
+
+#space1 {
+  color: #e1e7c2;
+  text-align: center;
+  margin-top: 18px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+      HANGMAN STARTS HERER                      */
+
+#hangmanText {
+  margin-top: 170px;
+  margin-left: 300px;
+  letter-spacing: 1.3px;
+}
+
+#hangmangif {
+  margin-left: 100px;
+  margin-bottom: 125px;
+}
+
+#hangmanInfo {
+  margin-left: 830px;
+  margin-top: -510px;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.hangmanLinks {
+  color: #7a49a5;
+  margin-left: 30px;
+}
 
 
 

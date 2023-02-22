@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Battle Code</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body id="pewpew">
+
+    <nav id="navBar">
+        <a class="mainNav" href="home.html">Home</a>
+        <a class="mainNav" href="resume.html">Resume</a>
+        <a class="mainNav" href="about-me.html">About Me</a>
+        </nav>
+
+
+         <h2 id="space">Space Battle Code</h2>
+         <h3 id="space1">make sure you are running this in your terminal</h3>
+        <p id="codeForTheSpaceBattle">
+
+    <code id="spaceJava">
+            const prompt = require('prompt-sync')(); <br />
+            
+            console.clear() <br />
+            
+            let shipNumber = 0; <br />
+            
+            
+            class Spaceship { <br />
+                constructor (hull, firepower, accuracy) { <br />
+                this.hull = 20; <br />
+                this.firepower = 5; <br />
+                this.accuracy = .7; <br >
+                attack () {<br />
+                    this.name = "USS Schwarzenegger"<br />
+                }
+                    
+                    if (Math.random() < this.accuracy) {<br />
+            
+                        let damage = this.firepower<br />
+                        
+                        console.log(`${Spaceship.name} Fire at those aliens!! Attack Ship! You dealt ${damage} damage!` )<br />
+            
+                        alienShips[shipNumber].hull +=  (-1 * damage);<br />
+                        
+                        // setTimeout(alienShips[shipNumber].checkHull, 2000)<br />
+                        alienShips[shipNumber].checkHull();<br />
+                
+                    } else {<br />
+                        // if we miss this is what we would log down below<br />
+            
+                        console.log(`Are you even aiming at them??? Try again.`)<br />
+            <br />
+                        alienShipAttacking();<br />
+            
+                    }<br />
+            
+                  
+                }<br />
+                retreat () {<br />
+                    console.log(`Run ${Spaceship.name} while you can! Enemies are way too strong`)<br />
+                }
+                checkHull () {<br />
+                    
+                    if (this.hull <= 0) {<br />
+                        
+                        console.log(`Engine failure! Goodbye.... ${Spaceship.name}`)<br />
+                        
+                    } else {<br />
+            
+                        console.log(`Aliens are gunning us down, but that's not enough!`) <br />
+                        
+                        setTimeout(continousAttack, 2000) <br />
+                    } <br />
+                } <br />
+                // make sure you add a else statement here after declaring enemies ship <br />
+            } <br />
+            
+            const player = new Spaceship; <br />
+            
+            
+            //---------------------------------------------------------------------------------------------------
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            /<br />/ this is the aliens ship <br />
+             <br />
+            class Aliens { <br />
+                constructor(hull, firepower, accuracy) { <br />
+                this.hull = Math.floor(Math.random() * 4) + 3; <br />
+                this.firepower = Math.floor(Math.random() * 3) + 2; <br />
+                this.accuracy = (Math.floor(Math.random() * 3 ) + 6) / 10; <br />
+                this.name = "Alien Ship" <br />
+                } <br />
+                attack () { <br />
+                    let damage = this.firepower <br />
+            
+                    if (Math.random() < this.accuracy) { <br />
+            
+                    console.log(`${Aliens.name} Attack those humans! You've inflicted ${damage} on them, nice work!`) <br />
+            
+                    player.hull -= this.firepower; <br />
+            
+                    // set a timerout for player check out <br />
+            
+                        setTimeout(player.checkHull, 2000) <br />
+                    } else {
+            
+                        console.log(`Aliens seems to be blind as well.....`) <br />
+                        continousAttack(); <br />
+                        
+                    } <br />
+                } <br />
+                checkHull () { <br />
+                 
+                    if (this.hull < 1) { <br />
+            
+                        console.log(`Damn! The humans were entirely too strong for us! But our brothers will avenge us!`)   <br />
+            
+            
+                        if (shipNumber < 5) { <br />
+                            
+                            shipNumber++; <br />
+                            
+            
+                            // setting a timer for the alien ship attacking <br />
+                            setTimeout(letsAttack, 2000) <br />
+                            
+            
+                        } else { <br />
+                         
+                            console.log(`You've defeated all the aliens! Great work!`) <br />
+                           
+                        } <br />
+                        
+                    } else if (this.hull > 0) { <br />
+            
+                        console.log(`We've survived the humans puny hit! Let's hit them back!`) <br />
+            
+                        setTimeout(alienShipAttacking, 2000); <br />
+            
+                    } <br />
+                }  <br />
+            
+                        
+            
+            } <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            //---------------------------------------------------------------------------------------------------
+            
+            
+            
+            
+            // all the alien ship <br />
+            
+             const ship1 = new Aliens; <br />
+             const ship2 = new Aliens; <br />
+             const ship3 = new Aliens; <br />
+             const ship4 = new Aliens; <br />
+             const ship5 = new Aliens; <br />
+             const ship6 = new Aliens; <br />
+            
+            
+             <br />
+             <br />
+             <br />
+             <br />
+      
+            
+            //---------------------------------------------------------------------------------------------------
+            <br />
+            <br />
+            <br />
+            <br />
+            //arary of the alien ships <br />
+            
+            
+            
+            
+            const alienShips = [ship1, ship2, ship3, ship4, ship5, ship6] <br />
+            
+            
+            
+            
+            
+            //---------------------------------------------------------------------------------------------------
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            /*
+            **The alien ships** should each have the following _ranged_ properties determined randomly:
+            
+            * hull - between `3` and `6` <br />
+            * firepower - between `2` and `4` <br />
+            * accuracy - between `.6` and `.8` <br />
+            
+            You could be battling six alien ships each with unique values.  <br />
+            
+            Example use of **accuracy** to determine a hit: <br />
+            
+            if (Math.random() < alien[0].accuracy) { <br />
+                console.log('You have been hit!'); <br />
+            } <br />
+            ```
+            
+            
+            */
+            
+            // This is creating the new players and Alien ships <br />
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            //---------------------------------------------------------------------------------------------------
+            
+            
+            const USS_Schwarzenegger = new Spaceship(); <br />
+            const Aliens_Ship = new Aliens(); <br />
+            
+            
+            //---------------------------------------------------------------------------------------------------
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            // retry function <br />
+            
+            function retry () { <br />
+                // the while loop to continue the game or stop the game <br />
+            
+            
+            while (true) { <br />
+                //clears the console it said <br />
+                console.clear() <br />
+                let userInput = prompt(`Would you like to try again? (y/n) `) <br />
+            
+                if (userInput === 'y') { <br />
+                    console.log(`Your wish is my command... Let try this again...`) <br />
+                    break; <br />
+                } else if (userInput === 'n') { <br />
+                    console.log(`Great idea! Enough for now.`) <br />
+                    break; <br />
+                } <br />
+            } <br />
+            
+            } <br />
+             <br />
+            
+             
+             // retry function to call it   <br />
+            
+            // retry(); <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            //---------------------------------------------------------------------------------------------------
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //---------------------------------------------------------------------------------------------------
+            <br />
+            <br />
+            <br />
+            <br />
+            function letsAttack () {
+                
+                //  player attack function <br />
+            
+                //clears the console it said
+                while (true) { <br />
+                console.clear()
+                let userInput = prompt(`Do you want to attack the Alien ship you're facing? Or flee like a coward. (y/n) `)
+            
+                if (userInput === 'y') {
+                    
+                    console.log(`Your wish is my command... Let blow they ass up...`) <br />
+                    
+                    // sets a pause timer  <br />
+            
+                    console.log(`Alien Ship Number ${shipNumber}`)
+                    // this will log what alien ship number we are on. <br />
+            
+                    // this function will allow the user to move forward with the attack.
+                    setTimeout(continousAttack, 2000) <br />
+                    break;
+                    console.log(`You're actually a coward.... Till next time then`)
+                } else if (userInput === 'n') { <br />
+                    break; <br />
+                } <br />
+            } <br />
+            
+            } <br />
+            
+            //player attacking function <br />
+            
+            // attacking(); <br />
+            
+            
+            //---------------------------------------------------------------------------------------------------
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            function alienShipAttacking () { <br />
+                // alien attack function <br />
+                alienShips[shipNumber].attack(); <br />
+               
+            
+                // console.log(player.hull); <br />
+            }    <br />
+            
+            // alienShipAttacking (); <br />
+            
+            
+            //---------------------------------------------------------------------------------------------------
+            <br />
+            <br />
+            <br />
+            <br />
+            
+            function continousAttack () { <br />
+                player.attack (); <br />
+            
+                
+                // checking for enemy ships health <br />
+            
+                // console.log(alienShips[shipNumber].hull) <br />
+               
+                // if (alienShips[shipNumber].hull > 0) { <br />
+                //     alienShipAttacking(); <br />
+                // } <br />
+            } <br />
+            
+            //continousAttack(); <br />
+             <br />
+            //attacking();  <br />
+            
+            
+            //---------------------------------------------------------------------------------------------------
+            
+            <br />
+            <br />
+            <br />
+            <br />
+            function gameStart () { <br />
+                //  game start function <br />
+             <br />
+                // this make sures that the ship nnumbers starts at 0 <br />
+            
+                let shipNumber = 0; <br />
+            
+            while (true) { <br />
+                //clears the console it said <br />
+                console.clear() <br />
+                let userInput = prompt(`Would you like to start the game?  (y/n) `) <br />
+                
+                if (userInput === 'y') { <br />
+                    console.log(`Let's start then...`) <br />
+                    letsAttack(); <br />
+                    
+                    break; <br />
+                } else if (userInput === 'n') { <br />
+                    console.log(`I'll wait till you're ready...`) <br />
+                    break; <br />
+                } <br />
+            } <br />
+             <br />
+            } <br />
+             <br />
+            gameStart();
+            <br />
+            <br />
+            <br />
+            <br />
+            //---------------------------------------------------------------------------------------------------
+        </code>
+    
+        </p>
+
+
+
+
+
+
+
+        <footer>
+            <a href="contactMe.html">Contact Me</a>
+            <a href="https://www.linkedin.com/in/garyzhuo/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/garyzhuo" target="_blank">GitHub</a>
+        </footer>
+        
+
+
+    
+</body>
+</html>
