@@ -75,6 +75,15 @@
     color: rgba(51, 51, 51, 1);
   }
 
+  #hoverMe {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2px;
+    background-color: bisque;
+    text-align: center;
+    justify-content: space-around;
+  }
 
 /* #welcomeSentence {
   justify-content: left;
@@ -355,7 +364,8 @@ height: 50%;
 #codeForTheSpaceBattle {
   margin-top: 35px;
   text-align: center;
-  background-image: url('spacespace.jpeg');
+  text-align: center;
+  background-image: url('2030.gif');
   background-repeat: no-repeat;
   background-size: cover;
   color: #109292;
@@ -365,7 +375,7 @@ height: 50%;
 
 #pewpew {
   display: inline-block;
-  background-image: url('outerspace.gif');
+  background-image: url('outttttteerrrrspace.webp');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -415,18 +425,21 @@ height: 50%;
 #hangmanHeaderHtml {
   text-align: center;
   letter-spacing: 1.5px;
-  color: rgba(51, 51, 51, 1);
+  color: rgb(27, 189, 116);
+  
 
 }
 #oneOfThree {
   text-align: center;
   letter-spacing: 1px;
   margin-top: 10px;
+  color: #8ed35c;
+  
 }
 
 #hangmanBody {
   text-align: center;
-  background-color: rgb(220, 148, 220);
+  /* background-color: rgb(220, 148, 220); */
 margin-top: 50px;
 border-style: solid;
   border-radius: 2px;
@@ -445,7 +458,8 @@ border-style: solid;
 }
 
 #hangmanHtmlInfo {
-  background-color: #7bb056;
+  background-image: url('brew-witch.gif');
+  background-size: contain;
 
 }
 
@@ -505,9 +519,10 @@ border-style: solid;
 
  #forest {
   /* background-color: #109292; */
-  background-image: url('pig\ in\ forest.gif');
+  background-image: url('outside.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 200px;
  }
 
 #hangmanHeaderJS{
@@ -539,8 +554,8 @@ border-style: solid;
 }
 
 #hangmanJava {
-  background-image: url('campfire.gif');
-  background-size: contain;
+  background-image: url('js\ pic.gif');
+  background-size: cover;
 
 }
 

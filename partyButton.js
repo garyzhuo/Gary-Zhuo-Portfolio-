@@ -13,3 +13,15 @@
           partyModeButton.addEventListener('click', () => {
             myAudio.play();
           })
+
+
+
+          // hangmanBody.hover(function () {
+          //   hangmanBody.css('background-color', 'pink');
+          // }, function () {
+          //   hangmanBody.css('bacground-color', 'red');
+          // });
+
+
+
+       
