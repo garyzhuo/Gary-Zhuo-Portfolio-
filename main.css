@@ -470,10 +470,88 @@ border-style: solid;
 
 
 #partyMode {
-  background-color: #109292;
-  margin-top: 1200px;
-  margin-left: 1359px;
+  background-color: #7bb056;
+  margin-top: 1300px;
+  margin-left: 1319px;
+  margin-bottom: 50px;
+  border: none;
 }
+
+#dontTouchMe {
+  margin-left: 1349px;
+  margin-top: -55px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+#hangmanHeaderCss {
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgb(118, 192, 126);
+}
+
+#twoOfThree {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: rgba(230, 246, 84, 0.744);
+}
+
+/* #backgroundForest {
+  background-image: url('pig\ in\ forest.gif');
+}
+ */
+
+ #forest {
+  /* background-color: #109292; */
+  background-image: url('pig\ in\ forest.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+#hangmanHeaderJS{
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgb(201, 189, 49);
+}
+
+#ThreeOfThree {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: rgb(6, 138, 199);
+}
+
+ #hangmanCssCodeOne {
+  display: inline-block;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 180px;
+  color: rgb(115, 55, 218);
+ }
+
+
+#javaHangman {
+  text-align: center;
+  color: #8ed35c;
+}
+
+#hangmanJava {
+  background-image: url('campfire.gif');
+  background-size: contain;
+
+}
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------------------- 
       MY WEBSITE STARTS HERER                      */
 
@@ -504,6 +582,9 @@ border-style: solid;
 
   /*--------------------------------------------------------
           CONTACT ME PAGE WILL GO DOWN HERE*/
+
+
+
 
 
 #contactMeBody {

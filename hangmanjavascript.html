@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="index.js" defer></script>
 </head>
-<body>
+<body id="hangmanJava">
 
 
     <nav id="navBar">
@@ -18,8 +18,179 @@
         <a class="mainNav" href="projects.html">Projects Page</a>
         </nav>
 
-    
+        <h2 id='hangmanHeaderJS'>Hangman Codes </h2>
+        <h4 id="ThreeOfThree">part 3 of a 3 part series, JavaScript edition</h4>
 
+        
+        <pre id="javaHangman">
+            <code>
+            //------------------------------------------------------------------------
+
+
+window.onload = function() {
+
+    // this should hopefully reference my hangman characters
+    const hangmanCharacters = document.getElementById("hangman-characters")
+
+
+    const wordDisplay = document.getElementById("word-display");
+
+
+  // these are the words we'll be guessing
+// i spent 3 hours trying to figure out why my code wouldnt pop up on my 
+//underscore, but thats because these letters were lowercased and in my HTML they were in caps
+// so i changed these words to caps and now its working!
+
+  const words = ['LEAGUE OF LEGENDS', 'VALORANT', 'HOGWARTS', 'CSGO', 'GTA', 'APEX'];
+
+
+
+// this is the method used to generate the random word for the site
+  const randomWord = words[Math.floor(Math.random() * words.length)];
+
+  // this is how we're going to split the words & underscores
+  let wordArray = randomWord.split('').map(char => (char === ' ' ? ' ' : '_'));
+
+  // this is the for loop to go over the word array that was up there
+  for (let i = 0; i < randomWord.length; i++) {
+    if (randomWord[i] === ' ') {
+      // using the splice method it get the spaces for the words
+      wordArray.splice(i, 1, ' ');
+    }
+  }
+
+
+
+  //this should be the code to make it appear after the word is clicked on but for some reason its not working how its supposed to be
+  const updateWordDisplay = function () {
+  wordDisplay.innerHTML = wordArray.join(" ");
+  }
+  updateWordDisplay();
+
+
+  const checkGuess = function(letter) {
+    if (randomWord.includes(letter)) {
+      for (let i = 0; i < randomWord.length; i++) {
+        if (randomWord[i] === letter) {
+          wordArray.splice(i, 1, letter);
+        }
+      }
+      checkWin();
+    } else {
+      numberWrongGuess += 1;
+      // updateHangman();
+    }
+    guessedLetter.push(letter);
+    updateGuessedLetters();
+    updateWordDisplay();
+  }
+
+// this will check if the user has won by guessing the correct words or not
+  const checkWin = function() {
+    if (wordArray.join(" ") === randomWord) {
+      const winningAlert = document.getElementById("winningMessage")
+      winningAlert.innerHTML = "You've won! Don't expect any prizes!"
+    }
+  };
+
+//  checkWin();
+if (wordArray.join("").indexOf("_") === -1) {
+  checkWin();
+}
+//------------------------------------------------------------------------
+
+
+// function checkGuess(letter) {
+//   if (word.includes(letter)) {
+//     for (let i = 0; i < word.length; i++) {
+//       if (word[i] === letter) {
+//         wordDisplay[i] = letter;
+//       }
+//     }
+//   } else {
+//     numberWrongGuess += 1;
+//     updateHangman();
+//   }
+//   guessedLetter.push(letter);
+//   updateGuessedLetters();
+//   updateWordDisplay();
+// } 
+
+
+
+
+//------------------------------------------------------------------------
+
+ // wordDisplay.innerHTML = wordArray.join(" ");
+
+  // setting buttons to query selete the alphabet in my HTML
+  const buttons = document.querySelectorAll("#alphabetLetters button");
+
+//------------------------------------------------------------------------
+
+
+// adding event listeners to my button variable
+  buttons.forEach((button) => {
+
+    button.addEventListener('click', function () {
+
+      const letter = button.innerHTML;
+
+      console.log(`You just clicked on the letter ${letter}`);
+
+      if (randomWord.includes(letter)) {
+
+        for (let i = 0; i < randomWord.length; i++) {
+
+          if (randomWord[i] === letter) {
+
+            wordArray.splice(i, 1, letter);
+          }
+        }
+        // this is supposed to update it
+        updateWordDisplay();
+      } else {
+        numberWrongGuess++;
+        if (numberWrongGuess === maxNumbersOfWrongGuess) {
+          alert(`You've lost the game dummy.. Try again!`)
+          location.reload();
+        } else {
+          checkWin();
+        }
+      }
+    });
+  });
+//------------------------------------------------------------------------
+// number guess starts with
+  let numberWrongGuess = 0;
+
+  // make number of guesses wrong
+  const maxNumbersOfWrongGuess = 6;
+
+//------------------------------------------------------------------------
+
+  const wrongGuessDisplay = document.getElementById("number-wrong-guess");
+
+  buttons.forEach((button) => {
+
+    button.addEventListener("click", function() {
+
+      if (!randomWord.includes(button.innerHTML)) {
+
+       // numberWrongGuess++;
+
+        // wrongGuessDisplay.innerHTML = numberWrongGuess;
+        document.getElementById("number-wrong-guess").innerHTML = numberWrongGuess;
+        if (numberWrongGuess === 6) {
+          alert (`You suck at this game!`, 1000)
+        }
+      }
+    });
+  });
+}
+</code>
+
+        </pre>
 
 
 

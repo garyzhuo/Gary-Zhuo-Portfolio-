@@ -33,26 +33,28 @@ previous.addEventListener('click', () => {
         currentImageIndex = images.length -1;
     }
     images[currentImageIndex].style.display = 'block'
-})
+});
 
 /*--------------------------------------------------------------------------------
            POP UP MESSAGE CODE WILL GO HERE   
            referred back to the Modals lesson  */
 
-window.onload = function() {
-    let popUpMessage = document.getElementById('popUpMessage');
-    let closeEnjoy = document.getElementById('popUpMessageButton')
+// window.onload = function() {
+//     let popUpMessage = document.getElementById('popUpMessage');
+//     let closeEnjoy = document.getElementById('popUpMessageButton')
 
-    popUpMessage.style.display = 'block';
+//     popUpMessage.style.display = 'block';
 
-    closeEnjoy.onclick = function () {
-        popUpMessage.style.display = 'none';
+//     closeEnjoy.onclick = function () {
+//         popUpMessage.style.display = 'none';
 
-        window.onclick = function(event) {
-            if (event.target === popUpMessage) {
-                popUpMessage.style.display = 'none';
-            }
-        }
-    }
-};
+//         window.onclick = function(event) {
+//             if (event.target === popUpMessage) {
+//                 popUpMessage.style.display = 'none';
+//             }
+//         }
+//     }
+// };
+
+
 
