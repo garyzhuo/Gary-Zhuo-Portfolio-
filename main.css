@@ -1,4 +1,4 @@
-
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -33,13 +33,11 @@
     letter-spacing: 3px;
   }
 
-  /* .homePageBorder { 
-    position: absolute;
-    display: inline-block;
+  .homePageBorder { 
+    position: relative;
     background-image: linear-gradient(180deg, #E1E7C2, #7a49a5, rgb(212, 167, 82));
-    position: absolute;
-    animation: homePageBorder 2s linear infinite;
-  } */
+    /* animation: homePageBorder 2s linear infinite; */
+  }
 
   #homePagePic {
     display: block;
@@ -51,13 +49,6 @@
   }
   
 
-  /* #home-page-border {
-    max-width: fit-content;
-    padding: 16px;
-    position: relative;
-    background: linear-gradient(rotate, red, orange,blue,purple);
-    padding: 2px;
-  } */
 
   .mainNav {
     margin: 0 12vw 1vh;
@@ -341,7 +332,7 @@ height: 50%;
   margin-left: 830px;
   margin-top: -400px;
   margin-bottom: 70px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   line-height: 1.5rem;
 }
 
@@ -411,15 +402,104 @@ height: 50%;
   margin-left: 830px;
   margin-top: -510px;
   margin-bottom: 70px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   line-height: 1.5rem;
 }
 
 .hangmanLinks {
   color: #7a49a5;
   margin-left: 30px;
+  
 }
 
+#hangmanHeaderHtml {
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+
+}
+#oneOfThree {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+#hangmanBody {
+  text-align: center;
+  background-color: rgb(220, 148, 220);
+margin-top: 50px;
+border-style: solid;
+  border-radius: 2px;
+  margin-left: 650px;
+  margin-bottom: 1000px;
+}
+
+#hangmanBorder {
+  text-align: center;
+  display: inline-block;
+  border: rgb(231, 201, 28);
+  /* border-style: solid;
+  border-radius: 2px;
+  margin-left: 650px;
+  margin-bottom: 1000px; */
+}
+
+#hangmanHtmlInfo {
+  background-color: #7bb056;
+
+}
+
+#wordKey {
+  margin-left: 404px;
+  margin-top: -1600px;
+  letter-spacing: 1.8px;
+
+}
+
+#legendKey {
+  display: inline-block;
+  margin-left: 430px;
+  text-decoration: underline;
+    background-color: #C2E7DB;
+}
+
+/* #keys { */
+  /* display: flex; */
+  /* background-color: #C2E7DB;
+} */
+
+
+#partyMode {
+  background-color: #109292;
+  margin-top: 1200px;
+  margin-left: 1359px;
+}
+/* ------------------------------------------------------------------------------------------------------- 
+      MY WEBSITE STARTS HERER                      */
+
+#website {
+  margin-top: 320px;
+  margin-left: 284px;
+  letter-spacing: 1.8px;
+}
+
+#websiteGif {
+  margin-left: 60px;
+  margin-bottom: 125px;
+}
+
+#websiteInfo {
+   margin-left: 800px;
+  margin-top: -450px;
+  margin-bottom: 70px;
+  letter-spacing: 1.2px;
+  line-height: 1.5rem;
+}
+
+#websiteId {
+  color: #7a49a5;
+  margin-left: 130px;
+}
 
 
   /*--------------------------------------------------------
@@ -467,6 +547,10 @@ height: 50%;
   margin-top: -13vh;
   margin-right: 30px;
 }
+
+
+
+
 
   /*--------------------------------------------------------
                   ALL KEY FRAMES WILL GO DOWN HERE*/
@@ -620,7 +704,7 @@ height: 50%;
       }
     }
 
-@keyframes .homePageBorder {
+@keyframes homePageBorder {
   from {
     transform: rotate(0deg);
   }
