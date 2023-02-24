@@ -127,6 +127,13 @@
 }
 
 @media (max-width: 768px) {
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: left; */
+    padding: px
+  }
   #homePageFirstLine {
     top: 0px;
     letter-spacing: 0.7px;
@@ -151,6 +158,7 @@
     padding: 10px;
     text-align: center;
   }
+
 }
 
 
@@ -259,7 +267,20 @@ height: 50%;
     margin-left: 450px;
     margin-right: 0px;
   }
+  #infoAboutMe {
+    display: flex;
+    text-align: right;
+    color: rgba(51, 51, 51, 1);
+    justify-content: flex-end;
+    /* margin-right: auto; */
+    margin-top: -700px;
+    letter-spacing: 1px;
+    padding-right: 40px;
+    animation: infoAboutMe 1s ease-in;
+  }
 }
+
+
 /* ------------------------------------------------------------------------------------------------------- 
         RESUME PAGE STARTS HERE                     */
 
@@ -439,7 +460,8 @@ height: 50%;
 
 #hangmanBody {
   text-align: center;
-  /* background-color: rgb(220, 148, 220); */
+  background-color: rgb(38, 152, 78);
+  opacity: 0.4;
 margin-top: 50px;
 border-style: solid;
   border-radius: 2px;
@@ -467,6 +489,7 @@ border-style: solid;
   margin-left: 404px;
   margin-top: -1600px;
   letter-spacing: 1.8px;
+  color: #7bb056;
 
 }
 
@@ -475,6 +498,7 @@ border-style: solid;
   margin-left: 430px;
   text-decoration: underline;
     background-color: #C2E7DB;
+    opacity: 0.3;
 }
 
 /* #keys { */
