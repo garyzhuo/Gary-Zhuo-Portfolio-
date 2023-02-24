@@ -9,10 +9,10 @@ This project represent the skill level that I am currently at, and the site chan
 represents me as a SE & developer as well, always improving.
 
 
-This site is made of these 3 components ,
--HTML 
--CSS
--Javascript,
+This site is made of these 3 components ,<br />
+-HTML <br />
+-CSS<br />
+-Javascript,<br />
 
 The animations were made using a vareity of different keyframes and adjustments to the text boxes,
 
@@ -24,7 +24,7 @@ this part of the page will be continously updated as I grow and hone my skills a
 
 To run the games within the projects page, please make sure you download VS Code and have a accessible terminal.
 
-**Here is a link to how to download VS Code and how to set it up**
+**Here is a link to how to download VS Code and how to set it up** <br />
 https://code.visualstudio.com/learn/get-started/basics
 
 
@@ -43,7 +43,7 @@ enjoy.
 
 
 Attached below are some screenshots of the website to give you a preview.
-
+<br />
 <img width="1506" alt="Screenshot 2023-02-24 at 1 08 37 PM" src="https://user-images.githubusercontent.com/108549074/221273110-75412899-1fe4-4262-9970-f96e5b5e384d.png">
 
 
@@ -56,10 +56,10 @@ Attached below are some screenshots of the website to give you a preview.
 
 
 Here is the wireframming that started the entire project.
-
+<br />
 
 <img width="1512" alt="wire1" src="https://user-images.githubusercontent.com/108549074/221272901-5740fa73-ca35-434c-8d36-189694ec5044.png">
-
+<br />
 <img width="1512" alt="wire 2" src="https://user-images.githubusercontent.com/108549074/221272934-7a4607c8-f3d0-4f2b-97ed-670485d7f9d1.png">
 
 
