@@ -1,0 +1,834 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ------------------------------------------------------------------------------------------------------- 
+        HOME PAGE STARTS HERER                      */
+
+
+  #homePage {
+    background-color: rgba(194, 225, 231, 255);
+    height: 100%;
+    min-height: 100%;
+    /* padding: 32px; */
+  }
+
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: left; */
+    padding: 18px
+  }
+
+  #name {
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    margin-top: 0.5vh;
+    font-size: calc(30px + 2vw);
+    animation: name 2s ease-in-out;
+    letter-spacing: 3px;
+  }
+
+  .homePageBorder { 
+    position: relative;
+    background-image: linear-gradient(180deg, #E1E7C2, #7a49a5, rgb(212, 167, 82));
+    /* animation: homePageBorder 2s linear infinite; */
+  }
+
+  #homePagePic {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-image: linear-gradient(180deg, #E1E7C2, #7a49a5, rgb(81, 198, 231), rgb(59, 237, 151), rgb(240, 83, 83));
+    padding: 16px;
+    padding: 5.5px;
+  }
+  
+
+
+  .mainNav {
+    margin: 0 12vw 1vh;
+    border: 2px solid black;
+    background-color: bisque;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+  }
+  
+  footer {
+    /* position: absolute; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2px;
+    background-color: bisque;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  footer a {
+    margin: 0 45px;
+    color: rgba(51, 51, 51, 1);
+  }
+
+  #hoverMe {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2px;
+    background-color: bisque;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+/* #welcomeSentence {
+  justify-content: left;
+  top: -30px;
+} */
+
+#homePageFirstLine {
+  color: rgba(51, 51, 51, 1);
+  animation: homePageFirstLine 2s ease-in forwards;
+  position: relative;
+  top: -360px;
+  padding-left: 100px;
+  letter-spacing: 1px;
+}
+
+#homePageSecondLine {
+  color: rgba(51, 51, 51, 1);
+  animation: homePageSecondLine 3.5s ease-in forwards;
+  position: relative;
+  top: -350px;
+  padding-left: 115px;
+  letter-spacing: 1px;
+}
+
+#homePageThirdLine {
+  color: rgba(51, 51, 51, 1);
+  animation: homePageThirdLine 5s ease-in forwards;
+  position: relative;
+  top: -340px;
+  padding-left: 100px;
+  letter-spacing: 1px;
+}
+
+#homePageFourthLine {
+  color:rgba(51, 51, 51, 1);
+  animation: homePageFourthLine 6.5s ease-in forwards;
+  position: relative;
+  top: -330px;
+  padding-left: 95px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: left; */
+    padding: px
+  }
+  #homePageFirstLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
+  #homePageSecondLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
+  #homePageThirdLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
+  #homePageFourthLine {
+    top: 0px;
+    letter-spacing: 0.7px;
+    padding: 10px;
+    text-align: center;
+  }
+
+}
+
+
+
+/* got it to work on smaller screens so this code was no longer necessary  */
+
+/* #popUpMessage { */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#popUpMessage-text {
+  height: 150px;
+  width: 200px;
+  border-radius: 1px;
+} */
+
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+        ABOUT ME PAGE STARTS HERER                      */
+
+#aboutMeBody {
+  background-color: #C2E7DB;
+}
+
+#aboutMeTag {
+  text-align: center;
+  letter-spacing: 1.6px;
+  color: rgba(51, 51, 51, 1);
+  padding-right: 35px;
+}
+
+.images {
+  display: none;
+  width: 60%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px none;
+}
+
+.aboutMePictures {
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 100%;
+width: 70%;
+height: 50%;
+}
+
+#buttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 40px;
+  margin-top: 2vh;
+}
+
+#previousImage {
+  /* text-align: center; */
+  color: rgba(51, 51, 51, 1);
+  background-color: bisque;
+}
+
+
+#aboutMeButton{
+  /* align-self: center; */
+  color: rgba(51, 51, 51, 1);
+  background-color: bisque;
+}
+
+#infoAboutMe {
+  display: flex;
+  text-align: right;
+  color: rgba(51, 51, 51, 1);
+  justify-content: flex-end;
+  margin-right: auto;
+  margin-top: -1050px;
+  letter-spacing: 1px;
+  padding-right: 400px;
+  animation: infoAboutMe 1s ease-in;
+}
+
+#one {
+  display: flex;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
+  justify-content: flex-end;
+  margin-right: auto;
+  padding-right: 71px;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 1268px) {
+  #one {
+    text-align: right;
+    display: flex;
+    position: relative;
+    margin-top: 53vh;
+    font-size: 13px;
+    margin-left: 450px;
+    margin-right: 0px;
+  }
+  #infoAboutMe {
+    display: flex;
+    text-align: right;
+    color: rgba(51, 51, 51, 1);
+    justify-content: flex-end;
+    /* margin-right: auto; */
+    margin-top: -700px;
+    letter-spacing: 1px;
+    padding-right: 40px;
+    animation: infoAboutMe 1s ease-in;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+        RESUME PAGE STARTS HERE                     */
+
+
+#resumeTag {
+  text-align: center;
+  margin-left: -50px;
+  letter-spacing: 2px;
+  color: rgba(51, 51, 51, 1);
+  animation: resumeTag 2.8s linear infinite;
+}
+
+#resumeBody {
+  background-color: #e7c8c2;
+}
+/* #section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  width: 70%;
+  height: 50%;
+} */
+
+#resume1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -10vh;
+  max-width: -40%;
+  max-width: -40%;
+  margin-left: 350px;
+  animation: resume1 2.5s ease-in backwards;
+}
+
+#resume2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -10vh;
+  max-width: -40%;
+  max-width: -40%;
+  margin-left: 350px;
+  animation: resume2 5s ease-in forwards;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+       PROJECTS PAGE WILL STARTS HERER                      */
+#projectsBody {
+  background-color: #e1e7c2;
+}
+
+
+#projectsTag {
+
+  margin: 20px;
+  flex-direction: row;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  animation: projectsTag 1.9s ease-in infinite;
+}
+
+/* ------------------------------------------------------------------------------------------------------- 
+       SPACE BATTLE WILL STARTS HERER                      */
+
+#spaceBattleH {
+  margin-left: 290px;
+  margin-top: 55px;
+  letter-spacing: 1px;
+}
+
+#spaceBattleGif {
+  margin-left: 65px;
+}
+
+#spaceInfo {
+  margin-left: 830px;
+  margin-top: -400px;
+  margin-bottom: 70px;
+  letter-spacing: 1.5px;
+  line-height: 1.5rem;
+}
+
+
+#spaceClickMe {
+  margin-left: 897px;
+  color: #7a49a5;
+}
+
+#spaceCode {
+  margin-top: -50px;
+}
+
+#spaceJava {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+#codeForTheSpaceBattle {
+  margin-top: 35px;
+  text-align: center;
+  text-align: center;
+  background-image: url('2030.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #109292;
+  border: 2px;
+  border-left: 2px;
+}
+
+#pewpew {
+  display: inline-block;
+  background-image: url('outttttteerrrrspace.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#space {
+  color: #cccef8;
+  text-align: center;
+  font-weight: bold;
+}
+
+#space1 {
+  color: #e1e7c2;
+  text-align: center;
+  margin-top: 18px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+      HANGMAN STARTS HERER                      */
+
+#hangmanText {
+  margin-top: 170px;
+  margin-left: 300px;
+  letter-spacing: 1.3px;
+}
+
+#hangmangif {
+  margin-left: 100px;
+  margin-bottom: 125px;
+}
+
+#hangmanInfo {
+  margin-left: 830px;
+  margin-top: -510px;
+  margin-bottom: 70px;
+  letter-spacing: 1.2px;
+  line-height: 1.5rem;
+}
+
+.hangmanLinks {
+  color: #7a49a5;
+  margin-left: 30px;
+  
+}
+
+#hangmanHeaderHtml {
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgb(27, 189, 116);
+  
+
+}
+#oneOfThree {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: #8ed35c;
+  
+}
+
+#hangmanBody {
+  text-align: center;
+  background-color: rgb(38, 152, 78);
+  opacity: 0.4;
+margin-top: 50px;
+border-style: solid;
+  border-radius: 2px;
+  margin-left: 650px;
+  margin-bottom: 1000px;
+}
+
+#hangmanBorder {
+  text-align: center;
+  display: inline-block;
+  border: rgb(231, 201, 28);
+  /* border-style: solid;
+  border-radius: 2px;
+  margin-left: 650px;
+  margin-bottom: 1000px; */
+}
+
+#hangmanHtmlInfo {
+  background-image: url('brew-witch.gif');
+  background-size: contain;
+
+}
+
+#wordKey {
+  margin-left: 404px;
+  margin-top: -1600px;
+  letter-spacing: 1.8px;
+  color: #7bb056;
+
+}
+
+#legendKey {
+  display: inline-block;
+  margin-left: 430px;
+  text-decoration: underline;
+    background-color: #C2E7DB;
+    opacity: 0.3;
+}
+
+/* #keys { */
+  /* display: flex; */
+  /* background-color: #C2E7DB;
+} */
+
+
+#partyMode {
+  background-color: #7bb056;
+  margin-top: 1300px;
+  margin-left: 1319px;
+  margin-bottom: 50px;
+  border: none;
+}
+
+#dontTouchMe {
+  margin-left: 1349px;
+  margin-top: -55px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+#hangmanHeaderCss {
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgb(118, 192, 126);
+}
+
+#twoOfThree {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: rgba(230, 246, 84, 0.744);
+}
+
+/* #backgroundForest {
+  background-image: url('pig\ in\ forest.gif');
+}
+ */
+
+ #forest {
+  /* background-color: #109292; */
+  background-image: url('outside.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 200px;
+ }
+
+#hangmanHeaderJS{
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: rgb(201, 189, 49);
+}
+
+#ThreeOfThree {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: rgb(6, 138, 199);
+}
+
+ #hangmanCssCodeOne {
+  display: inline-block;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 180px;
+  color: rgb(115, 55, 218);
+ }
+
+
+#javaHangman {
+  text-align: center;
+  color: #8ed35c;
+}
+
+#hangmanJava {
+  background-image: url('js\ pic.gif');
+  background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------- 
+      MY WEBSITE STARTS HERER                      */
+
+#website {
+  margin-top: 320px;
+  margin-left: 284px;
+  letter-spacing: 1.8px;
+}
+
+#websiteGif {
+  margin-left: 60px;
+  margin-bottom: 125px;
+}
+
+#websiteInfo {
+   margin-left: 800px;
+  margin-top: -450px;
+  margin-bottom: 70px;
+  letter-spacing: 1.2px;
+  line-height: 1.5rem;
+}
+
+#websiteId {
+  color: #7a49a5;
+  margin-left: 130px;
+}
+
+
+  /*--------------------------------------------------------
+          CONTACT ME PAGE WILL GO DOWN HERE*/
+
+
+
+
+
+#contactMeBody {
+  background-color:#cccef8;
+}
+
+#contactMe {
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-right: 25px;
+  animation: contactMe 2s step-end infinite;
+}
+
+
+#gifs1 {
+  margin: 5vh;
+}
+
+
+#linkedinGif {
+  margin-left: 25%;
+}
+
+
+#gifs2 {
+  margin-bottom: 10vh;
+  margin: 5vh;
+
+}
+
+#email {
+  display: flex;
+  margin-top: -390px;
+  margin-left: 660px;
+}
+
+
+#github {
+  text-align: center;
+  margin-top: -13vh;
+  margin-right: 30px;
+}
+
+
+
+
+
+  /*--------------------------------------------------------
+                  ALL KEY FRAMES WILL GO DOWN HERE*/
+  @keyframes name {
+    from {
+      transform: rotate(-720deg) translate(-100%, -100%);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0deg) translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+
+@keyframes homePageFirstLine {
+  from {
+    opacity: -10;
+    color:  rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
+
+@keyframes homePageSecondLine {
+  from {
+    opacity: -20;
+    color:  rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
+
+@keyframes homePageThirdLine {
+  from {
+    opacity: -40;
+    color: rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
+
+@keyframes homePageFourthLine {
+  from {
+    opacity: -60;
+    color: rgba(194, 225, 231, 255);
+  }
+  to {
+    opacity: 1;
+    color: rgba(51, 51, 51, 1);
+  }
+}
+
+
+@keyframes aboutMePictures {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes infoAboutMe {
+  from {
+    transform: translateX(-100%)
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes resume1 {
+  0% {
+    opacity: -1;
+    color: #e7c8c2;
+    transform: translateY(-100%);
+  }
+  30% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes resume2 {
+  from {
+    background-color: #e7c8c2;
+    color: #e7c8c2;
+    opacity: 0;
+    transform: translateY(110%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes resumeTag {
+  0% {
+    transform: translateX(-3%)
+}
+  50% {
+    transform: translateX(4%);
+  }
+  100% {
+    transform: translateX(-3%);
+  }
+  }
+
+  @keyframes contactMe {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.07);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes projectsTag {
+      0% {
+        transform: rotate(1deg);
+      }
+      25% {
+        transform: rotate(7deg);
+      }
+      50% {
+        transform: rotate(2deg);
+      }
+      75% {
+        transform: rotate(-7deg);
+      }
+      100% {
+        transform: rotate(-1deg);
+      }
+    }
+
+@keyframes homePageBorder {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
