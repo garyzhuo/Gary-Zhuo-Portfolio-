@@ -3,7 +3,7 @@
 
 
 
-**Welcome** and thank you for taking the time to check my portfilo out,
+<h3 style="color:blue">Welcome</h3> and thank you for taking the time to check my portfilo out,
 
 This project represent the skill level that I am currently at, and the site changing and improving 
 represents me as a SE & developer as well, always improving.
