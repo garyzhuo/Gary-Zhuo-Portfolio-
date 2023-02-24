@@ -3,7 +3,7 @@
 
 
 
-Welcome and thank you for taking the time to check my portfilo out,
+**Welcome** and thank you for taking the time to check my portfilo out,
 
 This project represent the skill level that I am currently at, and the site changing and improving 
 represents me as a SE & developer as well, always improving.
@@ -43,6 +43,9 @@ enjoy.
 
 
 Attached below are some screenshots of the website to give you a preview.
+
+<img width="1506" alt="Screenshot 2023-02-24 at 1 08 37 PM" src="https://user-images.githubusercontent.com/108549074/221273110-75412899-1fe4-4262-9970-f96e5b5e384d.png">
+
 
 
 <img width="1510" alt="Screenshot 2023-02-24 at 1 09 39 PM" src="https://user-images.githubusercontent.com/108549074/221272214-b2977f16-3a18-42d1-9f44-63509863c041.png">
