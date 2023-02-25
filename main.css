@@ -449,16 +449,16 @@ height: 50%;
 
 @media (max-width: 768px) {
   #spaceBattleGif {
-    margin: 60px 0px 0px 100px;
+    margin: 90px 0px 0px 100px;
     scale: 200%;
   }
   #spaceBattleH {
     margin-left: 110px;
   }
   #spaceInfo {
-    margin: 80px 0px 0px -40px;
+    margin: 80px 0px 0px -30px;
     text-align: center;
-   font-size: 10px;
+   font-size: 8.7px;
   }
   #spaceClickMe {
     padding: 0px;
