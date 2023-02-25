@@ -456,7 +456,7 @@ height: 50%;
     margin-left: 110px;
   }
   #spaceInfo {
-    margin: 80px 0px 0px -30px;
+    margin: 80px 0px 0px 0px;
     text-align: center;
    font-size: 8.7px;
   }
@@ -466,6 +466,7 @@ height: 50%;
   }
   #spaceCode {
     margin-top: 10px;
+    margin-left: 15px;
   }
 }
 
@@ -727,8 +728,8 @@ border-style: solid;
     margin-left: 110px;
   }
   #websiteGif {
-    margin: 60px 0px 0px 10px;
-    scale: 140%;
+    margin: 60px 0px 0px 30px;
+    scale: 130%;
     padding: 0px;
     width: 300px;
     height: 200px;
